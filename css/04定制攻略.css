@@ -1,0 +1,244 @@
+/* #region header*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  background-color: #ff9c9c ;
+}
+#logo{
+  height: 50px;
+  margin-top: 25px;
+}
+li{
+  list-style: none;
+}
+header{
+  width: 1000px;
+  height: 100px;
+  line-height: 100px;
+  display: flex;
+  /* background-color: white; */
+  margin: 0 auto;
+}
+header>div{
+  flex: 1;
+  text-align: center;
+}
+header>div:nth-child(2){
+  color: #fccccc;
+  font-size: 25px;
+}
+.nav-container{
+  height: 50px;
+  background-color: #f17777;
+}
+nav{
+  margin: 0 auto;
+  width: 1000px;
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+}
+nav a{
+  flex: 1;
+  text-align: center;
+  display: block;
+  color: #fccccc;
+  background-color: #f17777;
+  text-decoration: none;
+}
+nav a:hover{
+  color: #f17777;
+  background-color:#fccccc;
+}
+
+.search{
+  height: 100px;
+  line-height: 100px;
+  box-sizing: border-box;
+}
+.search input{
+  border: 3px dotted #fccccc;
+  height: 30px;
+  text-indent: 1em;
+}
+.search button{
+  height: 30px;
+  color: #fccccc;
+  border:2px solid #fccccc;
+}
+/* #endregion */
+/* #region section*/
+section{
+  
+  width: 100%;
+}
+
+.spiltNav{
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to bottom ,#fbbbbb,#ff9c9c);
+}
+.spilt{
+  width: 100%;
+  height: 12px;
+  background:url(../images/0.gif) repeat;
+}
+.box-container{
+  width: 1000px;
+  display: flex;
+  margin: 0 auto;
+}
+.bianLan{
+  flex: 2;
+  text-align: center;
+}
+.content-box{
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+}
+/* #region 左侧边栏 */
+.bianLan .bianLan-item{
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+  border-left: 3px solid #f17777;
+  background-color: #fccccc;
+  display: flex;
+}
+.bianLan-item p{
+  flex: 9;
+  color: rgb(10, 26, 40);
+}
+.bianLan-item .span-container{
+  flex: 1;
+}
+.bianLan-item .span-container span{
+    width: 0%;
+    height: 0%;
+    display: inline-block;
+    border: 5px solid transparent;
+    border-top: 5px solid #f17777;
+    position: relative;
+    top: 2.5px;
+    right: 10px;
+}
+.item-container:hover .span-container span{
+  border: 5px solid transparent;
+  border-bottom: 5px solid #f17777;
+  position: relative;
+  top: -2.5px;
+}
+.bianLanContent{
+  display: flex;
+  width: 150px;
+}
+.bianLanContent .bianLanContent-column{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.bianLanContent .bianLanContent-column p{
+  flex: 1;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+}
+.bianLanContent-container{
+  display: none;
+}
+.item-container:hover .bianLanContent-container{
+  display: block;
+}
+/* #endregion */
+/* 主要内容 */
+.content{
+  flex: 1;
+  height: 140px;
+  background-color: white;
+  padding: 25px;
+  transition: all 1s;
+}
+.content .content-pic{
+  float: left;
+  text-align: center;
+  height: 90px;
+  line-height: 90px;
+}
+.content-pic img{
+  width: 120px;
+  height: 90px;
+}
+.content .content-article{
+  float: left;
+  
+  margin-left: 10px;
+}
+.content-article h3{
+  color: #00a3dc;
+}
+.content-article h4{
+  color: #a8a8a8;
+}
+.content-article p{
+  color: rgb(10, 26, 40);
+}
+.content:hover{
+  box-shadow: 0px 0px 10px rgb(16, 0, 13);
+}
+/* #endregion */
+
+/* #region 导航侧边栏 */
+.daohang-container{
+  position:fixed;
+  right: 0%;
+  top:50%;
+  margin-top: -300px;
+  width: 100px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color: white;
+  border:3px solid #f17777;
+  text-align: center;
+  color:#f17777;
+  z-index: 999;
+}
+
+.daohang-container .daohang-item{
+  flex: 1;
+  margin-top: 5px; 
+}
+.daohang-item a{
+  text-decoration: none;
+  color: #f17777;
+}
+.daohang-item a img{
+  width: 50px;
+  height: 50px;
+}
+/* #endregion */
+
+
+/*#region footer */
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: #f17777;
+}
+footer div{
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+  line-height: 100px;
+  text-align: center;
+  color: #fccccc;
+}
+/* #endregion */

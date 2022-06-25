@@ -1,0 +1,257 @@
+/* #region header*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  background-color: #ff9c9c ;
+}
+#logo{
+  height: 50px;
+  margin-top: 25px;
+}
+li{
+  list-style: none;
+}
+header{
+  width: 1000px;
+  height: 100px;
+  line-height: 100px;
+  display: flex;
+  /* background-color: white; */
+  margin: 0 auto;
+}
+header>div{
+  flex: 1;
+  text-align: center;
+}
+header>div:nth-child(2){
+  color: #fccccc;
+  font-size: 25px;
+}
+.nav-container{
+  height: 50px;
+  background-color: #f17777;
+}
+nav{
+  margin: 0 auto;
+  width: 1000px;
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+}
+nav a{
+  flex: 1;
+  text-align: center;
+  display: block;
+  color: #fccccc;
+  background-color: #f17777;
+  text-decoration: none;
+}
+nav a:hover{
+  color: #f17777;
+  background-color:#fccccc;
+}
+
+.search{
+  height: 100px;
+  line-height: 100px;
+  box-sizing: border-box;
+}
+.search input{
+  border: 3px dotted #fccccc;
+  height: 30px;
+  text-indent: 1em;
+}
+.search button{
+  height: 30px;
+  color: #fccccc;
+  border:2px solid #fccccc;
+}
+/* #endregion */
+/* #region section*/
+section{
+  width: 100%;
+}
+
+.spiltNav{
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to bottom ,#fbbbbb,#ff9c9c);
+}
+.spilt{
+  width: 100%;
+  height: 12px;
+  background:url(../images/0.gif) repeat;
+}
+.guanYu-pic{
+  width: 1000px;
+  margin: 100px auto;
+}
+.guanYu-pic img{
+  width: 1000px;
+}
+.zhaoShang{
+  width: 100%;
+  height: 200px;
+  background-color: #f17777;
+  line-height: 200px;
+}
+.zhaoShang p{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+.jiaMeng{
+  width: 1000px;
+  height: 300px;
+  display: flex;
+  margin: 100px auto;
+}
+.jiaMeng .jiaMeng-item{
+  background-color: white;
+  width: 250px;
+  height: 300px;
+  margin: 0 5px;
+  padding: 40px;
+}
+.jiaMeng .jiaMeng-item:first-child{
+  margin-left: 0;
+}
+.jiaMeng .jiaMeng-item:last-child{
+  margin-right: 0;
+}
+.jiaMeng-item .item-number{
+  font-weight: bolder;
+  font-size: 30px;
+  color: #f17777;
+  text-align: center;
+  
+}
+.jiaMeng-item .item-title{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  height: 100px;
+  line-height: 100px;
+  color: #f17777;
+}
+.jiaMeng-item .item-content{
+  color: #808080;
+  text-align: center;
+}
+.jiaMeng-item:hover .item-title{
+  color: white;
+}
+.jiaMeng-item:hover .item-number{
+  color: white;
+}
+.jiaMeng-item:hover .item-content{
+  color: white;
+}
+.jiaMeng-item:hover {
+  background: linear-gradient(to right, #f17777,#ffd5a2);
+}
+.biaoDan{
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  background-color: white;
+}
+.biaoDan .biaoDan-item{
+  flex: 1;
+}
+.biaoDan .biaoDan-item:nth-child(1){
+  background: linear-gradient(to right, #f17777,#ffd5a2);
+}
+.biaoDan .biaoDan-item:nth-child(1) p{
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  line-height: 300px;
+}
+.biaoDan .biaoDan-item:nth-child(2) input{
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 40px;
+  border: 2px solid #f17777;
+  border-radius: 2px;
+  margin-top: 75px;
+}
+
+.biaoDan .biaoDan-item:nth-child(3){
+  border-left:10px dotted #f17777;
+}
+.biaoDan .biaoDan-item:nth-child(3) div{
+  background: linear-gradient(to right, #f17777,#ffd5a2);
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+  width: 100px;
+  height: 30px;
+  margin: 125px auto;
+
+}
+.biaoDan .biaoDan-item:nth-child(3) div p{
+  color: white;
+  height: 30px;
+  text-align: center;
+}
+
+.zhanWei{
+  height: 100px;
+}
+/* #region 导航侧边栏 */
+.daohang-container{
+  position:fixed;
+  right: 0%;
+  top:50%;
+  margin-top: -300px;
+  width: 100px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color: white;
+  border:3px solid #f17777;
+  text-align: center;
+  color:#f17777;
+  z-index: 999;
+}
+
+.daohang-container .daohang-item{
+  flex: 1;
+  margin-top: 5px; 
+}
+.daohang-item a{
+  text-decoration: none;
+  color: #f17777;
+}
+.daohang-item a img{
+  width: 50px;
+  height: 50px;
+}
+/* #endregion */
+
+
+/*#region footer */
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: #f17777;
+}
+footer div{
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+  line-height: 100px;
+  text-align: center;
+  color: #fccccc;
+}
+/* #endregion */

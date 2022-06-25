@@ -1,0 +1,271 @@
+/* #region header*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  background-color: #ff9c9c ;
+}
+#logo{
+  height: 50px;
+  margin-top: 25px;
+}
+li{
+  list-style: none;
+}
+header{
+  width: 1000px;
+  height: 100px;
+  line-height: 100px;
+  display: flex;
+  /* background-color: white; */
+  margin: 0 auto;
+}
+header>div{
+  flex: 1;
+  text-align: center;
+}
+header>div:nth-child(2){
+  color: #fccccc;
+  font-size: 25px;
+}
+.nav-container{
+  height: 50px;
+  background-color: #f17777;
+}
+nav{
+  margin: 0 auto;
+  width: 1000px;
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+}
+nav a{
+  flex: 1;
+  text-align: center;
+  display: block;
+  color: #fccccc;
+  background-color: #f17777;
+  text-decoration: none;
+}
+nav a:hover{
+  color: #f17777;
+  background-color:#fccccc;
+}
+
+.search{
+  height: 100px;
+  line-height: 100px;
+  box-sizing: border-box;
+}
+.search input{
+  border: 3px dotted #fccccc;
+  height: 30px;
+  text-indent: 1em;
+}
+.search button{
+  height: 30px;
+  color: #fccccc;
+  border:2px solid #fccccc;
+}
+/* #endregion */
+/* #region section*/
+section{
+  
+  width: 100%;
+}
+
+.spiltNav{
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to bottom ,#fbbbbb,#ff9c9c);
+}
+
+.container1{
+  width: 1000px;
+  height: 550px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 100px;
+}
+.container1>div:nth-child(1){
+  width: 650px;
+  height: 550px;
+}
+.container1>div:nth-child(2){
+  width: 350px;
+  height: 550px;
+  
+}
+.container1>div .container1-title{
+  color: white;
+  font-size: 30px;
+  border-bottom:1px dotted white;
+  height: 50px;
+  line-height: 50px;
+}
+.container1-item{
+  width: 650px;
+  height: 250px;
+  display: flex;
+  color: #fccccc;
+}
+.container1-item>div:nth-child(1){
+  flex: 1;
+  padding: 10px;
+  padding-left: 0;
+}
+.container1-item>div img{
+  width: 310px;
+  height: 230px;
+}
+.container1-item>div:nth-child(2){
+  padding-left: 10px;
+  padding-right: 0;
+}
+.container1-item>div:nth-child(2)>p:nth-child(1){
+  height: 40px;
+  line-height: 40px;
+}
+.container1-item>div:nth-child(2)>p:nth-child(1):hover{
+  color: white;
+}
+.container1-item>div:nth-child(2)>p:nth-child(2){
+  color: #777777;
+  font-size: 12px;
+  height: 80px;
+  line-height: 25px;
+  
+}
+.container1-item>div:nth-child(2)>div p{
+  border-left:2px solid #fccccc;
+  text-indent: 1em;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom:1px dotted #fccccc;
+}
+.container1-item>div:nth-child(2)>div p:hover{
+  color: white;
+}
+/* 第二行 */
+.container1-item .item-pic img{
+  width: 200px;
+  height: 130px;
+}
+.item-pic{
+  padding: 0 !important;
+  flex: 1;
+  text-align: center;
+  margin-top: 30px;
+}
+.item-pic:nth-child(1){
+  text-align: left;
+}
+.item-pic:nth-child(3){
+  text-align: right;
+}
+.item-pic .p1{
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+}
+.item-pic .p2{
+  color: #777777;
+  font-size: 12px;
+  width: 200px;
+}
+.xiaoBiao{
+  margin-left: 40px;
+}
+.xiaoBiao-box{
+  height: 500px;
+  display: flex;
+}
+.san{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+.san p{
+  flex: 1;
+  text-align: center;
+  line-height: 163px;
+  color: #fccccc;
+}
+.san p:hover{
+  border:1px dotted white;
+  border-right:0 ;
+  color: white;
+}
+.san p:nth-child(1):hover{
+  border-top: 0;
+}
+.neiRong{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  
+}
+.neiRong .neiRong-item{
+  flex: 1;
+  
+}
+.neiRong-item img{
+  width: 156.7px;
+  
+}
+.zhanWei{
+  height: 100px;
+}
+/* #region 导航侧边栏 */
+.daohang-container{
+  position:fixed;
+  right: 0%;
+  top:50%;
+  margin-top: -300px;
+  width: 100px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color: white;
+  border:3px solid #f17777;
+  text-align: center;
+  color:#f17777;
+  z-index: 999;
+}
+
+.daohang-container .daohang-item{
+  flex: 1;
+  margin-top: 5px; 
+}
+.daohang-item a{
+  text-decoration: none;
+  color: #f17777;
+}
+.daohang-item a img{
+  width: 50px;
+  height: 50px;
+}
+/* #endregion */
+
+
+/*#region footer */
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: #f17777;
+}
+footer div{
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+  line-height: 100px;
+  text-align: center;
+  color: #fccccc;
+}
+/* #endregion */
